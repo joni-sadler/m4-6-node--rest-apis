@@ -21,19 +21,24 @@ _This activity is more about the discussion in how to best organize data endpoin
 |  endpoint       | method   | Description                      |
 |  --------       | ------   | -------------------------------- |
 | `/product`      | `GET`    | Returns a list of all products   |
-| `/product/123`  | `POST`   | Creates a new product            |
+| `/product`      | `POST`   | Creates a new product            |
 | `/product/123`  | `PUT`    | Updates the product              |
 | `/product/123`  | `GET`    | Returns details of the product   |
 | `/product/123`  | `DELETE` | Deletes the product              |
 | `/customer`     | `GET`    | Returns a list of all customers  |
-| `/customer/123` | `POST`   | Creates a new customer account   |
+| `/customer`     | `POST`   | Creates a new customer account   |
 | `/customer/123` | `PUT`    | Updates the customer account     |
 | `/customer/123` | `GET`    | Returns customer account details |
 | `/customer/123` | `DELETE` | Deletes the customer account     |
 | `/supplier`     | `GET`    | Returns a list of all suppliers  |
-| `/supplier/123` | `POST`   | Creates a new supplier           |
+| `/supplier`     | `POST`   | Creates a new supplier           |
 | `/supplier/123` | `PUT`    | Updates the supplier account     |
 | `/supplier/123` | `GET`    | Returns supplier account details |
 | `/supplier/123` | `DELETE` | Deletes the supplier account     |
+| `/seating`      | `GET`    | Returns a list of all seats      |
+| `/seating`      | `POST`   | Creates a new seat               |
+| `/seating/123`  | `PUT`    | Updates seat details             |    
+| `/seating/123`  | `GET`    | Returns seat details             |      
+| `/seating/123`  | `DELETE` | Deletes the seat                 |
 
 
