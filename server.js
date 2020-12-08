@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 // const { clients } = require('./data/clients');
 const { getAllClients, getClientId, addNewClient, deleteClient } = require('./handlers/clientHandlers');
-
+const { returnWordObject, getWord, handleGuess } = require('./handlers/hangmanHandlers');
 
 express()
   .use(function (req, res, next) {
@@ -30,5 +30,11 @@ express()
   .post('/clients/:id', addNewClient)
 
   .delete('/clients/:id', deleteClient)
+
+  .get('/hangman/word/:id', returnWordObject)
+
+  .get('/hangman/word', getWord)
+
+  .get('/hangman/guess/:id/:letter', handleGuess)
 
   .listen(8000, () => console.log(`Listening on port 8000`));
